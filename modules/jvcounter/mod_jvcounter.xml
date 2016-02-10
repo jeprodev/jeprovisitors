@@ -27,48 +27,48 @@
 		<fields name="params" > 
 			<fieldset name="BASIC"> 
 				<field name="moduleclass_sfx" type="text" size="40" default="" label="Module Class Suffix" description="Choose a module class suffix" /> 
-				<field name="jvcissunday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTODAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTODAY_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_is_sunday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_TODAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_TODAY_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvclanguage" type="list" default="en" label="MOD_JVCOUNTER_LANG_LABEL" description="MOD_JVCOUNTER_LANG_DESC" >
-					<option value="en">MOD_JVCLANG_EN</option>
-					<option value="fr">MOD_JVCLANG_FR</option>
+				<field name="jvc_language" type="list" default="en" label="MOD_JVCOUNTER_LANG_LABEL" description="MOD_JVCOUNTER_LANG_DESC" >
+					<option value="en">MOD_JVC_LANG_EN</option>
+					<option value="fr">MOD_JVC_LANG_FR</option>
 				</field>
 			</fieldset>
 			<fieldset name="DISPLAY_CONFIG">
-				<field name="jvcshowtoday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTODAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTODAY_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_today" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_TODAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_TODAY_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcshowyesterday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWYESTERDAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWYESTERDAY_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_yesterday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_YESTERDAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_YESTERDAY_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcshowthisweek" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTHISWEEK_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTHISWEEK_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_this_week" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_THIS_WEEK_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_THIS_WEEK_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcshowlastweek" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWLASTWEEK_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWLASTWEEK_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_last_week" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_LAST_WEEK_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_LAST_WEEK_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcshowthismonth" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTHISMONTH_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTHISMONTH_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_this_month" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_THIS_MONTH_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_THIS_MONTH_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcshowlastmonth" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWLASTMONTH_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWLASTMONTH_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_last_month" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOW_LAST_MONTH_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_LAST_MONTH_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcshowall" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWALL_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWALL_VISITS_DESC"  >
-					<option value="0">MOD_JVCNO</option>
-					<option value="1">MOD_JVCYES</option>
+				<field name="jvc_show_all" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHO_WALL_VISITS_LABEL" description="MOD_JVCOUNTER_SHOW_ALL_VISITS_DESC"  >
+					<option value="0">MOD_JVC_NO</option>
+					<option value="1">MOD_JVC_YES</option>
 				</field>
-				<field name="jvcstatstype" type="list" delault="default" label="MOD_JVCOUNTER_STATS_LABEL" description="MOD_JVCOUNTER_STATS_DESC" >
+				<field name="jvc_stats_type" type="list" delault="default" label="MOD_JVCOUNTER_STATS_LABEL" description="MOD_JVCOUNTER_STATS_DESC" >
 					<option value="default">Default</option>
 				</field>
-				<field name="jvcdigittype" type="list" delault="default" label="MOD_JVCOUNTER_DIGIT_LABEL" description="MOD_JVCOUNTER_DIGIT_DESC" >
+				<field name="jvc_digit_type" type="list" delault="default" label="MOD_JVCOUNTER_DIGIT_LABEL" description="MOD_JVCOUNTER_DIGIT_DESC" >
 					<option value="default">Default</option>
 				</field>
 			</fieldset>
