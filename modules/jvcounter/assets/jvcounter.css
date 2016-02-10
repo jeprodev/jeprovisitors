@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*** css file for jvcounter module */
+
+#jvcounter{width:98%; margin: 0 auto; }
+#jvcounter hr{width: 95%; margin:0 auto;}
+#jvcounterdigit { margin:0 auto; text-align:center;}
+#jvcounter-online{padding-left: 10px; margin-bottom: 10px;}
+/*#jvcounter_stats{ width:100%; margin:0 auto; }*/
+#jvcounter_stats table{width:95%; font-size:12px; margin:5px 1px 15px 1px; }
+#jvcounter_stats tr{}
+.jvcounterrow img { margin:0 auto; padding:0; border:none; }

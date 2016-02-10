@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>jvcounter</name>
+    <version>1.0.3</version>
+    <author>jeprodev</author>
+    <authorEmail>jeprodev@gmail.com</authorEmail>
+    <authorUrl>jeprodev.net</authorUrl>
+    <copyright>gnu-gpl</copyright>
+    <creationDate>2 - 7 - 2012</creationDate>
+    <scriptfile>script.php</scriptfile>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+
+    <administration>
+        <files folder="admin">
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>views</folder>
+            <filename>controller.php</filename>
+            <filename>jvcounter.php</filename>
+            <filename>index.html</filename>
+        </files>
+    </administration>
+</extension>

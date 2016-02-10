@@ -1,0 +1,77 @@
+<?xml version = "1.0" encoding = "utf-8"?> 
+<extension version="3.0" type="module" client="site" method="upgrade" > 
+	<name>jvcounter</name> 
+	<version>1.0.3</version> 
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license> 
+	<author>jeprodev</author> 
+	<authoremail>jeprodev@gmail.com</authoremail> 
+	<authorurl>jeprodev.net</authorurl> 
+	<copyright>Copyright (C) 2011. All rights reserved.</copyright>
+	<description>MOD_JVCOUNTER_XML_DESCRIPTION</description>
+	<creationDate>2 - 7 - 2012</creationDate> 
+	<files> 
+		<filename module="mod_jvcounter">mod_jvcounter.php</filename> 
+		<filename>helper.php</filename> 
+		<filename>index.html</filename> 
+		<folder>tmpl</folder> 		
+		<folder>images</folder>
+		<folder>assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_jvcounter.ini</language>
+		<language tag="en-GB">language/en-GB.mod_jvcounter.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_jvcounter.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_jvcounter.sys.ini</language>
+	</languages>
+	<config> 
+		<fields name="params" > 
+			<fieldset name="BASIC"> 
+				<field name="moduleclass_sfx" type="text" size="40" default="" label="Module Class Suffix" description="Choose a module class suffix" /> 
+				<field name="jvcissunday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTODAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTODAY_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvclanguage" type="list" default="en" label="MOD_JVCOUNTER_LANG_LABEL" description="MOD_JVCOUNTER_LANG_DESC" >
+					<option value="en">MOD_JVCLANG_EN</option>
+					<option value="fr">MOD_JVCLANG_FR</option>
+				</field>
+			</fieldset>
+			<fieldset name="DISPLAY_CONFIG">
+				<field name="jvcshowtoday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTODAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTODAY_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcshowyesterday" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWYESTERDAY_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWYESTERDAY_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcshowthisweek" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTHISWEEK_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTHISWEEK_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcshowlastweek" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWLASTWEEK_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWLASTWEEK_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcshowthismonth" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWTHISMONTH_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWTHISMONTH_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcshowlastmonth" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWLASTMONTH_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWLASTMONTH_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcshowall" type="radio" default="1" class="btn-group" label="MOD_JVCOUNTER_SHOWALL_VISITS_LABEL" description="MOD_JVCOUNTER_SHOWALL_VISITS_DESC"  >
+					<option value="0">MOD_JVCNO</option>
+					<option value="1">MOD_JVCYES</option>
+				</field>
+				<field name="jvcstatstype" type="list" delault="default" label="MOD_JVCOUNTER_STATS_LABEL" description="MOD_JVCOUNTER_STATS_DESC" >
+					<option value="default">Default</option>
+				</field>
+				<field name="jvcdigittype" type="list" delault="default" label="MOD_JVCOUNTER_DIGIT_LABEL" description="MOD_JVCOUNTER_DIGIT_DESC" >
+					<option value="default">Default</option>
+				</field>
+			</fieldset>
+		</fields> 
+	</config> 
+</extension> 

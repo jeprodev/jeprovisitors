@@ -1,0 +1,40 @@
+
+<extension version="3.0" type="plugin" group="system" >
+    <name>jvcounter</name>
+    <author>jeprodev</author>
+    <authorEmail>jeprodev@gmail.com</authorEmail>
+    <authorUrl>jeprodev.fr.nf</authorUrl>
+    <creationDate>2 - 10 - 2012</creationDate>
+    <licence>http://www.gnu.org/licence/gpl-2.0.html GNU/GPL</licence>
+    <copyright>(C)2005 Open Source Matters. All rights reserved.</copyright>
+    <version>1.0.3</version>
+    <files>
+        <filename plugin="jvcounter">jvcounter.xml</filename>
+        <filename plugin="jvcounter">jvcounter.php</filename>
+        <filename plugin="jvcounter">index.html</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">language/en-GB.plg_system_jvcounter.ini</language>
+        <language tag="en-GB">language/en-GB.plg_system_jvcounter.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR.plg_system_jvcounter.ini</language>
+        <language tag="fr-FR">language/fr-FR.plg_system_jvcounter.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="jvc_session_time" type="list" default="15" label="PLG_JVCOUNTER_SESSION_TIME_LABEL" description="PLG_JVCOUNTER_SESSION_TIME_DESCRIPTION">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
