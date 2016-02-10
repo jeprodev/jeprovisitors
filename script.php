@@ -73,8 +73,7 @@ class com_jvcounterInstallerScript
 
     }
 
-    function bugfixDBFunctionReturnedNoError()
-    {
+    function bugfixDBFunctionReturnedNoError(){
         $db = JFactory::getDBO();
     }
 

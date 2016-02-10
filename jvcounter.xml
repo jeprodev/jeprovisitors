@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.0" method="upgrade">
     <name>jvcounter</name>
-    <version>1.0.3</version>
+    <version>1.0.3.5</version>
     <author>jeprodev</author>
-    <authorEmail>jeprodev@gmail.com</authorEmail>
+    <authorEmail>deveopment@jeprodev.net</authorEmail>
     <authorUrl>jeprodev.net</authorUrl>
     <copyright>gnu-gpl</copyright>
     <creationDate>2 - 7 - 2012</creationDate>
+    <description>COM_JVCOUNTER_DESCRIPTION_LABEL</description>
     <scriptfile>script.php</scriptfile>
 
     <install>
@@ -20,10 +21,22 @@
         </sql>
     </uninstall>
 
+    <update>
+        <schemas>
+            <schemapath type="mysql" >sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
     <files folder="site" >
         <filename>index.html</filename>
         <filename>jvcounter.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
     </files>
+
+    <languages folder="site/language" >
+        <language tag="en-GB" >en-GB.com_jvcounter.ini</language>
+    </languages>
 
     <administration>
         <menu link="index.php?option=com_jvcounter" >COM_JVCOUNTER_LABEL</menu>
@@ -36,4 +49,8 @@
             <filename>index.html</filename>
         </files>
     </administration>
+
+    <languages folder="admin/language" >
+        <language tag="en-GB" >en-GB.com_jvcounter.ini</language>
+    </languages>
 </extension>
