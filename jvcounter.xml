@@ -20,7 +20,13 @@
         </sql>
     </uninstall>
 
+    <files folder="site" >
+        <filename>index.html</filename>
+        <filename>jvcounter.php</filename>
+    </files>
+
     <administration>
+        <menu link="index.php?option=com_jvcounter" >COM_JVCOUNTER_LABEL</menu>
         <files folder="admin">
             <folder>models</folder>
             <folder>sql</folder>
